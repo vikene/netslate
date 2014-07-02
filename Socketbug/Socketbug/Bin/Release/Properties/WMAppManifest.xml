@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="en-US" />
+  <App xmlns="" ProductID="{3161a3bc-f52f-4df3-88e8-ece753ae0dfe}" Title="Net Slate" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Vigneash Sundar" Description="An app that learns users interest and becomes smarter, by providing news according to your interest. NR comes with highly customizable User interface, with dynamic image backgrounds. NS gives top news at your home screen, with highly customized live tile. " Publisher="Vigneash Sundar" PublisherID="{d06017a7-1831-4f33-9452-bb330cdd8b3e}">
+    <IconPath IsRelative="true" IsResource="false">Resources\Icons\icon1.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
+      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
+      <Capability Name="ID_CAP_SENSORS" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="SocketbugToken" TaskName="_default">
+        <TemplateFlip>
+          <SmallImageURI IsRelative="true" IsResource="false">Resources\Icons\icon1.png</SmallImageURI>
+          <Count>0</Count>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Resources\Icons\icon2.png</BackgroundImageURI>
+          <Title>Net Slate</Title>
+          <BackContent></BackContent>
+          <BackBackgroundImageURI IsRelative="true" IsResource="false"></BackBackgroundImageURI>
+          <BackTitle></BackTitle>
+          <LargeBackgroundImageURI IsRelative="true" IsResource="false">Resources\Icons\icon3.png</LargeBackgroundImageURI>
+          <LargeBackContent />
+          <LargeBackBackgroundImageURI IsRelative="true" IsResource="false"></LargeBackBackgroundImageURI>
+          <DeviceLockImageURI IsRelative="true" IsResource="false"></DeviceLockImageURI>
+          <HasLarge>True</HasLarge>
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>
+<!-- WPSDK Version 8.0.9900 -->
